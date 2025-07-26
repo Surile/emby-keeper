@@ -1,6 +1,0 @@
-pyarmor>=8.0
-eventlet
-python-socketio
-appdirs
-requests
-gradio

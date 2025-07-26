@@ -1,5 +1,7 @@
 from ._templ_a import TemplateACheckin
 
+__ignore__ = True
+
 
 class JulyCheckin(TemplateACheckin):
     name = "july"

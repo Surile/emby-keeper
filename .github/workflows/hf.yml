@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  HF_SPACE_REPO: ekuser/prompt-generator
+  HF_SPACE_REPO: ekuser/ek
 
 jobs:
   sync-to-hf:
@@ -19,14 +19,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install python_minifier
-
-      - name: Process app.py
-        run: python scripts/hf.py
 
       - name: Push to Hugging Face
         run: |
